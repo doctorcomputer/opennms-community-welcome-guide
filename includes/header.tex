@@ -1,0 +1,89 @@
+\documentclass[%
+	pdftex,
+	a4paper,
+	oneside,
+	idxtotoc,
+	parskip,%        European type with space paragraphs
+	11pt,
+	listsleft
+]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{german, ngerman}
+\usepackage[german]{babel}
+
+\usepackage{a4wide}
+\usepackage[left=3.0cm, right=2.5cm, top=3.0cm, bottom=3.5cm]{geometry}
+
+%
+% Embedding graphic
+%
+\usepackage{graphicx}
+
+\usepackage{url}
+
+\usepackage{titlesec, blindtext, color}
+
+\definecolor{light_gray}{gray}{0.85}
+\definecolor{gray}{gray}{0.75}
+\definecolor{dark_gray}{gray}{0.50}
+
+% Chapter format
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray}{|}\hsp}{0pt}{\Huge\bfseries}
+
+% listings
+\usepackage{listings}
+\usepackage{inconsolata} 
+\usepackage{blindtext,expdlist} 
+
+\lstset{
+  backgroundcolor=\color{light_gray},
+  rulesepcolor=\color{gray},
+  numbers=left,
+  stepnumber=1,
+  numberstyle=\footnotesize,
+  captionpos=b,
+  breaklines=true,
+  breakatwhitespace=true,
+  basicstyle=\footnotesize\ttfamily
+}
+
+%
+% Package extending table properties
+%
+\usepackage{array}
+
+% 
+% Nicer tables
+%
+\usepackage{booktabs}
+
+%
+% Allow color in tables, longtables and add supertabular
+%
+\usepackage{colortbl}
+\usepackage{tabularx}
+
+\usepackage{color}
+\usepackage{xcolor}
+
+\sloppy
+\raggedbottom
+
+%
+% Table number format: chapter + table number
+%
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+
+\usepackage{path,epsfig}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+
+
