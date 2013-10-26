@@ -1,19 +1,8 @@
-\section{Community Support Tools}
-
-
-
-\subsection*{Issue tracking, code browser and build system}
-To document bugs, enhancements and feature request, the \emph{OpenNMS Group, Inc.} provide and maintains a public \emph{Atlassian JIRA} installation. It is recommended you create your JIRA account, which allows you to document bugs, enhancements or feature requests. The application for issue and feature tracking is available on \url{http://issues.opennms.org}.
-
-The \emph{OpenNMS} software development follows a test driven approach. To provide a stable and continous quality of the code base, the \emph{OpenNMS Group} provides and run \emph{Atlassian Bamboo} as a build system. It compiles, tests and deploys the \emph{OpenNMS} software from the public \emph{git} repositories. The build system is public available on \url{http://bamboo.internal.opennms.com:8085}.
-
-\emph{The OpenNMS Group} provides public access to \emph{Atlassian Fisheye} which gives the possibility to browse code from a browser and search for commit messages. The code browser is available on \url{http://fisheye.opennms.org}.
+\section{Support Tools}
+The development process is very active. Many developers around the world improve the code and add new features. To control our development and track issues we use different tools in our project. Most of the tools are maintained by the OpenNMS Group and all of them are publicly available. This section gives an short overview where you can find the tools and how they are used.
 
 \begin{itemize}
-  \item Continous integration to build, test, compile and deploy OpenNMS.
-  \item Packaging and providing infrastructure distributing pre-compiled packages for different operating systems and \emph{Linux/Unix} distributions
-  \item Issue tracking for bugs, enhancements and feature requests
-  \item Providing and running mailing lists
-  \item Maintaining the software branches and source code repository
-  \item Organizing and plan the software release management
+  \item \emph{Atlassian JIRA}: is used as issue tracker. You can document bugs create feature requests to enhance the software. The application can be found on \url{http://issues.opennms.org}. To create a good bug report or feature request for an enhancement it is necessary to provide some information. You find an introduction using JIRA on the wiki page \url{http://JIRA-WIKI-USAGE}.
+  \item \emph{Atlassian Bamboo}: is used as continuos integration system. The codebase from GitHub is checked out and will be compiled, tested and deployed. You can find the build system on \url{http://bamboo.internal.opennms.com:8085}.
+  \item \emph{Atlassian FishEye}: is used as a code browser. It allows developers to visualize changes in the code base. You can also have a look at the code to understand how a special monitor works in detail without check out the code with \emph{git}. The code browser is available on \url{http://fisheye.opennms.org}.
 \end{itemize}
